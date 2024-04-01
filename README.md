@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+<h1 align="center">Wochenplaner 📆</h1>  
+<p align="center">
+    A lightweight weekly planner app built with <a href="https://reactjs.org/">React</a>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![wochenplan](https://github.com/VampireNoob/Wochenplan/assets/128150500/7c2e9290-5c86-4511-8ee4-36158539aae4)
 
-## Available Scripts
 
-In the project directory, you can run:
+## Here I have created a somewhat complex weekly planner app with React.js, UUID and localStorage.
 
-### `npm start`
+You can view a live demo of the project here: https://wochen-plan.netlify.app/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🙂 Features:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- ✔️ Work with JSON.parse and JSON.stringify,
+- ✔️ Work with UUID v4 to assign a number to the notes,
+- ✔️ Work with localStorage to save the comments when reloading the page.
 
-### `npm test`
+## I use POST request here, you can also see how an external alert is used here.
+````
+const [plans, setPlan] = useState(
+    localStorage.plans ? JSON.parse(localStorage.plans) : []);
+  const [selectDay, setSelectDay] = useState(false);
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  useEffect(() => {
+    localStorage.setItem('plans', JSON.stringify(plans))
+  }, [plans])
 
-### `npm run build`
+  const addPlan = () => {
+    const newPlan = {
+      title: '',
+      id: uuid(),
+      planForADay: '',
+      things: ''
+    }
+````
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Built With
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+In this section you will find the programming languages ​​/ frameworcs / libraries that I used in this project.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* <img src="https://github.com/VampireNoob/Wedding-Wish-List/assets/128150500/c43e4d15-62e4-4254-a673-c4021fd4cf25" width="30">
+* <img src="https://github.com/VampireNoob/Wedding-Wish-List/assets/128150500/e8f0b5ca-935a-45d1-b5c0-419f02ee83d4" width="30">
+* <img src="https://github.com/VampireNoob/Wedding-Wish-List/assets/128150500/d1885e0d-bc56-480b-b104-b181b8c82cbf" width="30">
+* <img src="https://github.com/VampireNoob/Wochenplan/assets/128150500/d7f67a61-e656-4ece-8297-2ca0c7a185d5" width="30">
+## Contact
