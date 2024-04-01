@@ -1,38 +1,180 @@
+body {
+  background: url(weekly.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
 .App {
-  text-align: center;
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 60px;
+  letter-spacing: 0.3rem;
+  /* background: #dcedf7; */
+  /* border-radius: 20px; */
+  /* padding: 15px; */
+  color: #f5f5f5;
+  text-shadow: 1px 1px 1px #919191,
+    1px 2px 1px #919191,
+    1px 3px 1px #919191,
+    1px 4px 1px #919191,
+    1px 5px 1px #919191,
+    1px 6px 1px #919191,
+    1px 7px 1px #919191,
+    1px 8px 1px #919191,
+    1px 9px 1px #919191,
+    1px 10px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+}
+
+.button-add {
+  font-family: "Raleway", sans-serif;
+  font-size: 17px;
+  font-weight: bolder;
+  letter-spacing: 0.1rem;
+  background: #a5b37a;
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+}
+
+.button-delete {
+  font-family: "Raleway", sans-serif;
+  background: none;
+  border: 0;
+}
+
+.whole-plan {
+  width: 50%;
+  
+}
+
+.myInput {
+  font-family: "Raleway", sans-serif;
+  background: rgba(255,255,255,0.9);
+  display: block;
+  width: 70%;
+  height: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+/* .title {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
   color: white;
+} */
+
+textarea {
+  background: rgba(113,111,121,0.3);
+  color: rgb(164,240,255);
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
+  display: block;
+  width: 70%;
+  height: 200px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  margin-top: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.selected {
+  background: rgba(213,175,255,0.7);
+  border-radius: 4px;
+  padding: 7px;
+  margin-top: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.default {
+  background: rgba(255,216,169,0.8);
+  border-radius: 4px;
+  padding: 7px;
+  margin-top: 15px;
+}
+
+
+/* mobile */
+@media all and (max-width: 1150px) {
+  body {
+    height: 100vh;
   }
-  to {
-    transform: rotate(360deg);
+
+  /* .App {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+  } */
+
+  .head {
+    width: 30%;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+}
+
+@media all and (max-width: 1040px) {
+  /* body {
+    height: 200vh;
+  } */
+
+  .App {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+  }
+
+  h1 {
+    font-size: 60px;
+    text-align: center;
+  }
+
+  .head {
+    width: 180%;
+  }
+
+  .whole-plan {
+    width: 200%;
+  }
+}
+
+@media all and (max-width: 570px) {
+  body {
+    height: 200vh;
+  }
+
+  /* .App {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+  } */
+
+  h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .whole-plan {
+    width: 210%;
   }
 }
