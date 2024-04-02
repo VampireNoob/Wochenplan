@@ -1,6 +1,6 @@
 <h1 align="center">Wochenplaner 📆</h1>  
 <p align="center">
-    A lightweight weekly planner app built with <a href="https://reactjs.org/">React</a>
+    A somewhat complex weekly planner app built with <a href="https://reactjs.org/">React</a>
 </p>
 
 ![wochenplan](https://github.com/VampireNoob/Wochenplan/assets/128150500/7c2e9290-5c86-4511-8ee4-36158539aae4)
