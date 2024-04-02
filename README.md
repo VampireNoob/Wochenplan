@@ -16,7 +16,7 @@ You can view a live demo of the project here: https://wochen-plan.netlify.app/
 - ✔️ Work with UUID v4 to assign a number to the notes,
 - ✔️ Work with localStorage to save the comments when reloading the page.
 
-## I use POST request here, you can also see how an external alert is used here.
+## Here you can see a small part of the code with "JSON", which means that the text is retained after reloading.
 ````
 const [plans, setPlan] = useState(
     localStorage.plans ? JSON.parse(localStorage.plans) : []);
