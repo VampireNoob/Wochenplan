@@ -12,8 +12,8 @@ You can view a live demo of the project here: https://wochen-plan.netlify.app/
 
 ## 🙂 Features:
 
-- ✔️ Work with JSON.parse and JSON.stringify,
-- ✔️ Work with UUID v4 to assign a number to the notes,
+- ✔️ Work with JSON.parse and JSON.stringify.
+- ✔️ Work with UUID v4 to assign a number to the notes.
 - ✔️ Work with localStorage to save the comments when reloading the page.
 
 ## Here you can see a small part of the code with "JSON", which means that the text is retained after reloading.
