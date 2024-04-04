@@ -14,7 +14,7 @@ const MyList = ({ plans, addPlan, deletePlan, selectDay, setSelectDay }) => {
 // durchschreiben und wir benutzen hier auch den veränderten zustand "setSelectDay" um den zustand des kästchens 
 // zu verändern beim knopfdruck und gleichen es der "id" an damit das programm weiß im welchen kästchen was geändert
 // werden soll
-                <div className={`plan ${id === selectDay ? 'selected' : 'default'}`}
+                <div key='id' className={`plan ${id === selectDay ? 'selected' : 'default'}`}
                     onClick={ () => setSelectDay(id) }>
                     <p>{ title.substring(0, 25) }</p>
 {/* mit "substring(0, 20)" begrenzen wir die buchstabenanzahl bis auf 20 stück, somit verhindern wir, dass das
