@@ -13,7 +13,8 @@ const MyList = ({ plans, addPlan, deletePlan, selectDay, setSelectDay }) => {
 // dafür benutzen wir die klassen "selected" und "default" die wir dann in "App.css" die logik der abbildung
 // durchschreiben und wir benutzen hier auch den veränderten zustand "setSelectDay" um den zustand des kästchens 
 // zu verändern beim knopfdruck und gleichen es der "id" an damit das programm weiß im welchen kästchen was geändert
-// werden soll
+// werden soll, bei dem unterem div habe ich einen "key={id}" eingetragen um keinen fehler zu verursachen, es ist
+// wichtig immer einen schlüßel dazuzuschreiben bei verwendung der methode "map"
                 <div className={`plan ${id === selectDay ? 'selected' : 'default'}`}
                     onClick={ () => setSelectDay(id) } key={ id }>
                     <p>{ title.substring(0, 25) }</p>
