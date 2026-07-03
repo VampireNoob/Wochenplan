@@ -44,7 +44,7 @@ noch eine zeile durchschreiben und durch das wort "things" miteinander verbinden
 stehen */}
             <textarea 
             placeholder="Genaueres..."
-            id='planForADay'
+            id='things'
             value={selectDay.things}
             onChange={(e) => editPlan('things', e.target.value)} />
         </div>
